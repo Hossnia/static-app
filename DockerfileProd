@@ -1,6 +1,7 @@
 FROM  --platform=linux/amd64 alpine:latest
 COPY .  /usr/local/apache2/htdocs/
-RUN yum install vim -y
-RUN yum install curl -y
-RUN yum install wget -y
+RUN sudo apk update -y
+RUN sudo apk add vim -y
+RUN sudo apk add curl -y
+RUN sudo apk add wget -y
 EXPOSE 8000
