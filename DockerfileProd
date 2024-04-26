@@ -1,7 +1,7 @@
 FROM  --platform=linux/amd64 alpine:latest
 COPY .  /usr/local/apache2/htdocs/
-RUN apk update -y
-RUN apk add vim -y
-RUN apk add curl -y
-RUN apk add wget -y
+RUN apk update
+RUN apk add vim
+RUN apk add curl
+RUN apk add wget
 EXPOSE 8000
